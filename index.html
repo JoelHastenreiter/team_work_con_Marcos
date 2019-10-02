@@ -5,28 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Document</title>
-
+    <title>Ejercicio Scroll</title>
 </head>
 
-<body>
-    <header>
-        <h1>Scroll</h1>
-    </header>
-    <div>
-        <div></div>
-    </div>
-    <div></div>
-    <div class="cuadros" id="primero"></div>
-    <div class="cuadros" id="segundo"></div>
-    <div class="cuadros" id="tecero"></div>
-    <script src="script.js"></script>
-    <script AOS.init();>
-    AOS.init({
-    duration: 400,
-    })</script>
-</body>
+<div>
+
+    <body>
+        <header class="header">
+            <h1>Scroll</h1>
+            <p>animaciones de scroll</p>
+        </header>
+        <div class="body">
+            <div class="video" id="video"></div>
+        </div>
+        <footer class="footer">
+
+            <div class="cuadrados" data-aos="fade-right" data-aos-duration="900"
+            data-aos-easing="ease-in-sine"     ></div>
+            <div class="cuadrados" data-aos="zoom-n-down" 
+            data-aos-duration="1000"
+             ></div>
+            <div class="cuadrados" data-aos="fade-left" data-aos-duration="900"
+             data-aos-easing="ease-in-sine"></div>
+        </footer>
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+   
+  <script src="youtube.js"></script>
+
+    </body>
+</div>
 
 </html>
