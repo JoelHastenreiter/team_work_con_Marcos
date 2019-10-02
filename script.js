@@ -11,7 +11,11 @@ window.addEventListener('scroll', function () {
     if (posVideo + alturaVideo < currentScroll + windowheight &&
         posVideo > currentScroll
     ) {
-        video.classList.add("play");
+        if (!isPlayng) {
+            player
+            isPlayng = false;
+        }
+
     } else {
 
         video.classList.remove("play");
