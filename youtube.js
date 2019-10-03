@@ -54,9 +54,9 @@ window.addEventListener('scroll', function () {
         }
 
     } else {
-        if (!isPlayng) {
+        if (isPlayng) {
             player.pauseVideo();
-            isPlayng = false;
+            isPlayng = true;
         }
 
     }
