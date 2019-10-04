@@ -5,12 +5,20 @@ window.addEventListener('scroll', function (){
     var currentScroll = window.pageYOffset;
     var windowHeight = window.innerHeight;
 
-    if (posVideo + alturaVideo < currentScroll + windowHeight &&
-        posVideo > currentScroll   
+    if (posVideo + alturaVideo < currentScroll + windowheight &&
+        posVideo > currentScroll
     ) {
-       video.classList.add("play");
+        if (!isPlayng) {
+            player.playVideo();
+            isPlayng = false;
+        }
+
     } else {
-        video.classList.remove("play");
+        if (isPlayng) {
+            player.pauseVideo();
+            isPlayng = true;
+        }
+
     }
 
    // console.log("posVideo", posVideo);
